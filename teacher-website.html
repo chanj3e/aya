@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ms. Emily Parker - Elementary School Teacher</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff;
+        color: #333;
+      }
+      header {
+        background-color: #4a90e2;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        background-color: #5da9e9;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+      }
+      .main-content {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .cta-button {
+        display: inline-block;
+        background-color: #ffd700;
+        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      footer {
+        background-color: #4a90e2;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 20px;
+      }
+      .carousel {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      .carousel-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .carousel-item.active {
+        opacity: 1;
+      }
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .subject-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .subject-item {
+        background-color: #e6f3ff;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .subject-item:hover {
+        transform: scale(1.05);
+      }
+      .subject-item img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Ms. Aya Abaza</h1>
+      <p>Inspiring Young Minds in Elementary Education</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img src="img/image-1200x400 (1).jpg" alt="Classroom activities" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/image-1200x400 (2).jpg" alt="Students working together" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/image-1200x400 (3).jpg" alt="Art project display" />
+      </div>
+      <div class="carousel-item">
+        <img src="img/image-1200x400.jpg" alt="Art project display" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="img/students1200x400b001_8008888259_o.jpg"
+          alt="Art project display"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="main-content">
+        <h2 id="about">About Me</h2>
+        <p>
+          Welcome to my classroom website! I'm Ms. Aya Abaza, and I've been
+          teaching elementary school for over 2 years. I'm passionate about
+          creating a fun, inclusive, and engaging learning environment for all
+          my students. My goal is to inspire curiosity and a love for learning
+          in every child.
+        </p>
+
+        <h2 id="subjects">Subjects We Explore</h2>
+        <div class="subject-grid">
+          <div class="subject-item">
+            <img src="img2/image-300x200 (1).jpg" alt="Math" />
+            <h3>Mathematics</h3>
+            <p>Discovering the magic of numbers.</p>
+          </div>
+          <div class="subject-item">
+            <img src="img2/image-300x200 (2).jpg" alt="Science" />
+            <h3>Science</h3>
+            <p>Exploring the wonders of the natural world.</p>
+          </div>
+          <div class="subject-item">
+            <img src="img2/image-300x200 (7).jpg" alt="Reading" />
+            <h3>Reading & Writing</h3>
+            <p>
+              Unleashing creativity and building strong communication skills.
+            </p>
+          </div>
+          <div class="subject-item">
+            <img src="img2/image-300x200 (5).jpg" alt="Social Studies" />
+            <h3>Social Studies</h3>
+            <p>Learning about our world, its people, and cultures.</p>
+          </div>
+        </div>
+
+        <h2 id="resources">Parent Resources</h2>
+        <ul>
+          <li>Weekly Newsletter Sign-up</li>
+          <li>Homework Help Guidelines</li>
+          <li>Recommended Reading List</li>
+          <li>Educational Websites for Kids</li>
+        </ul>
+
+        <h2 id="contact">Contact Me</h2>
+        <p>
+          If you have any questions or concerns, please don't hesitate to reach
+          out!
+        </p>
+        <p>Email: ms.Aya-Lena-Omnya</p>
+        <p>Private Phone: (+20) 1016101673</p>
+
+        <a href="#" class="cta-button">Schedule a Parent-Teacher Conference</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Ms. Aya Abaza's Classroom. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const carousel = document.querySelector(".carousel");
+      const items = carousel.querySelectorAll(".carousel-item");
+      let currentItem = 0;
+
+      function showNextItem() {
+        items[currentItem].classList.remove("active");
+        currentItem = (currentItem + 1) % items.length;
+        items[currentItem].classList.add("active");
+      }
+
+      setInterval(showNextItem, 5000); // Change image every 5 seconds
+    </script>
+  </body>
+</html>
